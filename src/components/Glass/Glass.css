@@ -1,0 +1,60 @@
+.glass{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+img{
+    width: 500px;
+}
+.glassnote{
+    width: 500px;
+    h1{
+        width: 300px;
+        font-weight: 900;
+        color: #41096d;
+    }
+    p{
+        width: 330px;
+        line-height: 25px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        color: #41096d;
+    }
+}
+@media (max-width: 768px) {
+    .glass {
+        flex-direction: column-reverse;
+        padding: 20px;
+        align-items: center;
+    }
+
+    img {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .glassnote {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+
+        h1 {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
+        p {
+            width: 100%;
+            line-height: 20px;
+            font-size: 0.9rem;
+        }
+
+        a {
+            font-size: 0.8rem;
+        }
+    }
+}

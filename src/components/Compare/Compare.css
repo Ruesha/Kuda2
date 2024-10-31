@@ -1,0 +1,64 @@
+.table{
+    height: 450px;
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+padding: 50px;
+box-shadow: 2px 2px 2px 2px rgba(0,0, 0, 0.1);
+border-radius: 8px;
+}
+.tablecontain{
+    padding: 50px;
+    h1{
+        color: #40196d;
+        text-align: center;
+        font-weight: 800;
+    }
+}
+.line{
+    display: flex;
+    justify-content: space-evenly;
+    border-top:1px solid lightgray ;
+    p{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .table {
+        max-width: 90%; /* Further reduce maximum width */
+        padding: 0;
+    }
+
+    .tablecontain h1 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .line p {
+        min-width: 100px; /* Reduce minimum width */
+    }
+}
+
+@media (max-width: 480px) {
+    .table {
+        max-width: 100%; /* Allow full width on very small screens */
+        padding: 0;
+        height: 1300px;
+    }
+
+    .tablecontain h1 {
+        font-size: 1.25rem; /* Further adjust font size */
+    }
+
+    .line {
+        flex-direction: column; /* Stack items vertically on very small screens */
+        align-items: flex-start;
+    }
+
+    .line p {
+        min-width: auto; /* Remove minimum width to allow flexibility */
+        width: 100%; /* Make items take full width */
+    }
+}

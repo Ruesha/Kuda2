@@ -1,0 +1,39 @@
+.money{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+img{
+    width: 500px;
+}
+.info{
+  width: 300px;
+  h1{
+    line-height: 2.5rem;
+    color: #40196D;
+    font-weight: 900;
+  }
+  p{
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .money{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+
+  
+  img{
+    width: 100%;
+  
+  }
+}
+  .info{
+    h1{
+      width: 100%;
+    }
+  }
+  
+}

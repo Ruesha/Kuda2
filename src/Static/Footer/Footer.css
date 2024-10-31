@@ -1,0 +1,109 @@
+.knote1 a{
+    display: block;
+    line-height: 45px;
+    font-size: .8rem;
+}
+.knote1 h5{
+color: #40196d;
+}
+.knote{
+    display: flex;
+gap: 70px;
+}
+.kuda{
+    display: flex;
+    justify-content: space-around;
+    
+    img{
+        width:  150px;
+        height:100px;
+       
+    }
+}
+.footcontain{
+    border-top: 1px solid lightgray ;
+    padding: 50px;
+}
+.footcontain button{
+    display: flex;
+    width: 150px;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+}
+.in{
+    font-size: 1.8rem;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    .diff{
+        color: #DDE0FD;
+        background-color: #40196d;
+    }
+    
+}
+
+.mid{
+    color: #40196d;
+    text-align: center;
+    margin-top: 60px;
+    font-size: .8rem;
+}
+.product{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    h5{
+        color: #40196d;
+    }
+}
+.init{
+    width: 200px;
+    p{
+        line-height: 25px;
+        font-size: .8rem;
+    }
+}
+.story p{
+    font-size: .8rem;
+    color: #6A6A70;
+    line-height: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .knote {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 90px; 
+    }
+
+    .kuda {
+        flex-direction: column;
+        
+    }
+
+    .kuda img {
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .footcontain {
+        padding: 10px;
+        button{
+            width: 200px;
+            height: 45px;
+        }
+    }
+    .product{
+        flex-direction:column ;
+    }
+}

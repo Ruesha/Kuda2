@@ -1,0 +1,61 @@
+.block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+
+}
+img{
+    width: 500px;
+}
+.blocknote{
+    width: 500px;
+    h1{
+        width: 300px;
+        line-height: 45px;
+        color: #40196d;
+        font-weight: 900;
+    }
+    p{
+        width: 450px;
+        line-height: 25px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        color: #40196d;
+    }
+}
+@media (max-width: 768px) {
+    .block {
+        flex-direction: column-reverse; /* Stack items vertically */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    img {
+        width: 100%; /* Make image responsive */
+        max-width: none; /* Remove max-width to allow full responsiveness */
+    }
+
+    .blocknote {
+        width: 100%; /* Use full width for the note */
+        padding: 0 10px; /* Add padding for better spacing */
+        text-align: center;
+
+        h1 {
+            width: 100%; /* Full width */
+            line-height: 36px; /* Adjust line height */
+            font-size: 1.5rem; /* Adjust font size for smaller screens */
+        }
+
+        p {
+            width: 100%; /* Full width */
+            line-height: 20px; /* Adjust line height */
+            font-size: 0.9rem; /* Adjust font size */
+        }
+
+        a {
+            font-size: 0.8rem; /* Adjust font size */
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.Part{
+    background-color: #FBFBFB;
+    padding: 50px;
+}
+.partnote h1{
+    text-align: center;
+    color: #40196d;
+    font-weight: 800;
+   margin-bottom: 70px;
+}
+.partimg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+        width: 150px;
+    }
+}
+@media (max-width: 768px) {
+    .partimg{
+        img{
+            width: 100px;
+            margin-bottom: 50px;
+        }
+    }
+}
