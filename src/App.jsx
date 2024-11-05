@@ -7,7 +7,7 @@ import Products from './pages/Products';
 import Help from './pages/Help';
 import Company from './pages/Company';
 import Business from './pages/Business';
-import Api from './pages/api';
+import Api from './pages/Api'
 import './App.css';
 
 const App = () => {
