@@ -7,6 +7,7 @@ import Products from './pages/Products';
 import Help from './pages/Help';
 import Company from './pages/Company';
 import Business from './pages/Business';
+import Api from './pages/api';
 import './App.css';
 
 const App = () => {
@@ -15,10 +16,11 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage /> } />
-        <Route path="/products" component={<Products />} />
-        <Route path="/help" component={<Help/>} />
-        <Route path="/company" component={<Company/>} />
-        <Route path="/business" component={<Business/>} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/help" element={<Help/>} />
+        <Route path="/company" element={<Company/>} />
+        <Route path="/business" element={<Business/>} />
+        <Route path="/api" element={<Api/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
